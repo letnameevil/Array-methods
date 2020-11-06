@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  多为数组扁平化
+
+      let arr = [1, 2, , 3, 4, [4, 5, [7, 8]], 10]
+      console.log(arr.flat(Infinity))
+      // flat() 里面的参数决定了要去掉多少层,默认为1,去掉一层,如果参数是Infinity,则表示最终会变成一维数组
+      // 这个方法也能将数组中的空位(那个索引号没有给值)去掉
+
+
+      let arr1 = [1,2,3,5,,]
+
+      console.log(...arr1) 
+    </script>
+  </body>
+</html>
